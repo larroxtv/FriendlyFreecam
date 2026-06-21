@@ -1,6 +1,6 @@
 [freecam.msg]
-enabled = "Freecam açıldı."
-disabled = "Freecam kapatıldı."
+enabled = "FriendlyFreecam açıldı."
+disabled = "FriendlyFreecam kapatıldı."
 invalidRegex = "Geçersiz düzenli ifade: %s"
 
   [freecam.msg.tripod]
@@ -9,4 +9,4 @@ invalidRegex = "Geçersiz düzenli ifade: %s"
   reset = "Kamera %s sıfırlandı"
 
   [freecam.msg.restricted]
-  server = "Freecam şu anki sunucuda (%s) kısıtlı."
+  server = "FriendlyFreecam şu anki sunucuda (%s) kısıtlı."

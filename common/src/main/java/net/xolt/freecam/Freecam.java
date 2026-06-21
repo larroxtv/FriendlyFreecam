@@ -30,7 +30,7 @@ import net.minecraft.world.entity.player.Input;
 public class Freecam {
 
     public static final Minecraft MC = Minecraft.getInstance();
-    public static final String MOD_ID = "freecam";
+    public static final String MOD_ID = "friendlyfreecam";
 
     private static boolean freecamEnabled = false;
     private static boolean tripodEnabled = false;

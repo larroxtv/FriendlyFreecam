@@ -167,7 +167,7 @@ public class ModConfigDTO implements MCAwareModConfig, RawJsonHolder {
             public List<String> patterns = new ArrayList<>();
         }
 
-        public boolean ignoreAll = true;
+        public boolean ignoreAll = false;
         public boolean alwaysCheck = false;
     }
 

@@ -1,7 +1,7 @@
 <p align="center" width="100%"><img src=".idea/icon.svg" width="128" height="128" alt="Freecam icon"></p>
 
-# Freecam
-[![Crowdin](https://badges.crowdin.net/freecam/localized.svg)](https://crowdin.com/project/freecam)
+# FriendlyFreecam
+[![Crowdin](https://badges.crowdin.net/friendlyfreecam/localized.svg)](https://crowdin.com/project/friendlyfreecam)
 
 <!-- website:start id="description" -->
 
@@ -24,10 +24,10 @@ Here's the [full license](./LICENSE).
 
 <!-- website:start id="translation" -->
 
-You can help [translate Freecam on Crowdin](https://crowdin.com/project/freecam).
+You can help [translate FriendlyFreecam on Crowdin](https://crowdin.com/project/friendlyfreecam).
 If you're unfamiliar with Crowdin, you can read their [getting started as a volunteer translator guide](https://support.crowdin.com/enterprise/getting-started-for-volunteers).
 
-If you'd like to translate a language we don't currently target, please [open an issue](https://github.com/MinecraftFreecam/Freecam/issues/new) asking us to enable the language.
+If you'd like to translate a language we don't currently target, please [open an issue](https://github.com/MinecraftFreecam/FriendlyFreecam/issues/new) asking us to enable the language.
 
 <!-- website:stop -->
 <!-- website:start id="config" -->
@@ -83,7 +83,7 @@ If you'd like to translate a language we don't currently target, please [open an
 
 | Name                  | Description                                             | Default Value |
 |-----------------------|---------------------------------------------------------|---------------|
-| Freecam Notifications | Notifies you when entering/exiting freecam.             | `true`        |
+| FriendlyFreecam Notifications | Notifies you when entering/exiting friendlyfreecam.             | `true`        |
 | Tripod Notifications  | Notifies you when entering/exiting tripod cameras.<br/> | `true`        |
 
 <!-- website:stop -->
