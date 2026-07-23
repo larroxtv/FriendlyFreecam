@@ -63,7 +63,7 @@ repositories {
     }
     exclusiveContent {
         forRepository {
-            maven("https://maven.terraformersmc.com") { name = "TerraformersMC" }
+            maven("https://maven.terraformersmc.com/releases") { name = "TerraformersMC" }
         }
         filter { includeGroup("com.terraformersmc") }
     }
