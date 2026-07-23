@@ -2,7 +2,7 @@
 title = "Options pour la caméra libre"
 
   [freecam.config.gui.fallback]
-  title = "Config GUI not available."
+  title = "Interface de configuration non disponible."
 
 [freecam.config.controls]
 label = "Raccourcis"
@@ -19,7 +19,7 @@ tooltip = "Comment la caméra se déplace."
   CREATIVE = "Créatif"
 
   [freecam.config.movement.speed]
-  value = "Value: %01.2f"
+  value = "Valeur : %01.2f"
 
     [freecam.config.movement.speed.horizontal]
     label = "Vitesse horizontale"
@@ -92,6 +92,11 @@ tooltip = "L'apparence de la caméra libre."
   [freecam.config.visual.showSubmersionFog]
   label = "Afficher le brouillard de submersion"
   tooltip = "Si vous pouvez voir le brouillard sous la lave, l'eau, etc. en caméra libre."
+
+  [freecam.config.visual.outlinePlayer]
+  label = "Lecteur de contour"
+  "tooltip[0]" = "Appliquez un contour à votre joueur en activant Freecam."
+  "tooltip[1]" = 'Le contour peut également être contrôlé en utilisant la touche "Toggle Player Outline".'
 
 [freecam.config.utility]
 label = "Utilitaires"

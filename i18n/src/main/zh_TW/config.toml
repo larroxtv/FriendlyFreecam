@@ -1,5 +1,5 @@
 [freecam.config.gui]
-title = "靈魂出竅選項"
+title = "Freecam 選項"
 
   [freecam.config.gui.fallback]
   title = "Config GUI not available."
@@ -92,6 +92,11 @@ tooltip = "Freecam 的外觀。"
   [freecam.config.visual.showSubmersionFog]
   label = "顯示水中霧氣"
   tooltip = "是否在水下、熔岩或粉雪中顯示霧氣覆蓋。"
+
+  [freecam.config.visual.outlinePlayer]
+  label = "Outline Player"
+  "tooltip[0]" = "Apply an outline to your player when activating Freecam."
+  "tooltip[1]" = 'The outline can also be controlled using the "Toggle Player Outline" keybind.'
 
 [freecam.config.utility]
 label = "實用選項"

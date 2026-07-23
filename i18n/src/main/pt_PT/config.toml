@@ -93,12 +93,17 @@ tooltip = "O visual do freecam."
   label = "Mostrar Neblina de Submersão"
   tooltip = "Se podes ver uma sobreposição de neblina debaixo d'água, d'lava ou de neve em pó."
 
+  [freecam.config.visual.outlinePlayer]
+  label = "Contorno de Jogador"
+  "tooltip[0]" = "Aplica um contorno no seu jogador ao ativar o Freecam."
+  "tooltip[1]" = 'O contorno pode ser controlado a utilizar o atalho "Alternar Contorno de Jogador".'
+
 [freecam.config.utility]
 label = "Utilitários"
 tooltip = "Reajustes no freecam."
 
   [freecam.config.utility.disableOnDamage]
-  label = "Desativar ao receber dano"
+  label = "Desabilitar ao Ferir-se"
   tooltip = "Desabilita o freecam ao aleijar-se."
 
   [freecam.config.utility.freezePlayer]

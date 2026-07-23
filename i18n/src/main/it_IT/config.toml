@@ -2,7 +2,7 @@
 title = "Opzioni Camera libera"
 
   [freecam.config.gui.fallback]
-  title = "Config GUI not available."
+  title = "Interfaccia di configurazione non disponibile."
 
 [freecam.config.controls]
 label = "Associazione dei Tasti"
@@ -19,7 +19,7 @@ tooltip = "Come si muove la telecamera."
   CREATIVE = "Creativa"
 
   [freecam.config.movement.speed]
-  value = "Value: %01.2f"
+  value = "Valore: %01.2f"
 
     [freecam.config.movement.speed.horizontal]
     label = "Velocità orizzontale"
@@ -92,6 +92,11 @@ tooltip = "Lo sguardo della Camera libera."
   [freecam.config.visual.showSubmersionFog]
   label = "Mostra Nebbia da Immersione"
   tooltip = "Se vedi una copertura di nebbia sott'acqua, nella lava e nella neve farinosa."
+
+  [freecam.config.visual.outlinePlayer]
+  label = "Contorno Giocatore"
+  "tooltip[0]" = "Applica un profilo al tuo giocatore quando attivi Freecam."
+  "tooltip[1]" = 'Il contorno può essere controllato anche usando il tastierino "Toggle Player Outline".'
 
 [freecam.config.utility]
 label = "Opzioni di Utilità"

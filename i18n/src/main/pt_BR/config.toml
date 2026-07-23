@@ -93,6 +93,11 @@ tooltip = "O visual do freecam."
   label = "Exibir Névoa de Fluidos"
   tooltip = "Se você pode ver névoa embaixo d'água, na lava ou na neve fofa."
 
+  [freecam.config.visual.outlinePlayer]
+  label = "Contorno de Jogador"
+  "tooltip[0]" = "Aplica um contorno em seu jogador ao ativar o Freecam."
+  "tooltip[1]" = 'O contorno também pode ser alternado com o atalho "Alternar Contorno de Jogador".'
+
 [freecam.config.utility]
 label = "Utilitários"
 tooltip = "Melhorias no Freecam."
