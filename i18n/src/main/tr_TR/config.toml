@@ -33,11 +33,6 @@ tooltip = "Kameranın hareketi."
 label = "Çarpışma Ayarları"
 tooltip = "Freecam ile içinden geçebileceğiniz bloklar."
 
-  [freecam.config.collision.ignoreAll]
-  label = "Tüm Çarpışmaları Yoksay"
-  "tooltip[0]" = "Freecam ile tüm blokların içinden geçmeye izin verir."
-  "tooltip[1]" = "§eYukarıdaki ayarları geçersiz kılar."
-
   [freecam.config.collision.ignoreTransparent]
   label = "Şeffaf Blokları Yoksay"
   tooltip = "Freecam ile şeffaf blokların içinden geçmeye izin verir."
@@ -59,11 +54,6 @@ label = "ID'leri Yoksay"
 label = "Düzenli İfadeleri Yoksay"
 "tooltip[0]" = "Düzenli İfade yazımı kullan."
 "tooltip[1]" = 'Tam blok idleri ile karşılaştırılır, ör. "minecraft:grass_block".'
-
-  [freecam.config.collision.alwaysCheck]
-  label = "Her Zaman İlk Çarpışmayı Kontrol Edin"
-  "tooltip[0]" = "§7İlk Perspektifin§r çarpışmayı kontrol edip etmemesi"
-  "tooltip[1]" = "§7Tüm Çakışmaları Yoksay§r kullandığınızda bile."
 
 [freecam.config.visual]
 label = "Görsel Ayarlar"

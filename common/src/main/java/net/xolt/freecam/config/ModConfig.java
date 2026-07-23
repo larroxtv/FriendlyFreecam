@@ -26,8 +26,6 @@ public interface ModConfig {
 
     double getVerticalSpeed();
 
-    boolean ignoreAllCollision();
-
     boolean shouldCheckInitialCollision();
 
     Perspective getInitialPerspective();

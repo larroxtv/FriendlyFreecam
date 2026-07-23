@@ -49,18 +49,13 @@ public class ModConfigDTO implements MCAwareModConfig, RawJsonHolder {
     }
 
     @Override
-    public boolean ignoreAllCollision() {
-        return collision.ignoreAll;
-    }
-
-    @Override
     public boolean shouldCheckInitialCollision() {
-        return collision.alwaysCheck || !collision.ignoreAll;
+        return true;
     }
 
     @Override
     public boolean ignoreCollisionWith(Block block) {
-        return collision.ignoreAll || collisionPredicate.shouldIgnore(block);
+        return collisionPredicate.shouldIgnore(block);
     }
 
     @Override
@@ -171,9 +166,6 @@ public class ModConfigDTO implements MCAwareModConfig, RawJsonHolder {
             public List<String> ids = new ArrayList<>();
             public List<String> patterns = new ArrayList<>();
         }
-
-        public boolean ignoreAll = false;
-        public boolean alwaysCheck = false;
     }
 
     public VisualConfig visual = new VisualConfig();

@@ -25,10 +25,6 @@ speed.vertical.tooltip = "The vertical speed of freecam."
 label = "Collision Options"
 tooltip = "Which blocks you can travel through in freecam."
 
-ignoreAll.label = "Ignore All Collision"
-ignoreAll."tooltip[0]" = "Allows travelling through all blocks in freecam."
-ignoreAll."tooltip[1]" = "§eOverrides above settings."
-
 ignoreTransparent.label = "Ignore Transparent Blocks"
 ignoreTransparent.tooltip = "Allows travelling through transparent blocks in freecam."
 
@@ -44,10 +40,6 @@ whitelist.ids."tooltip[1]" = "If the namespace is omitted, \"minecraft:\" is ass
 whitelist.patterns.label = "Ignore Regular Expressions"
 whitelist.patterns."tooltip[0]" = "Use Regular Expression syntax."
 whitelist.patterns."tooltip[1]" = "Matched against full block id, e.g. \"minecraft:grass_block\"."
-
-alwaysCheck.label = "Always Check Initial Collision"
-alwaysCheck."tooltip[0]" = "Whether §7Initial Perspective§r should check for"
-alwaysCheck."tooltip[1]" = "collision, even when using §7Ignore All Collision§r."
 
 [freecam.config.visual]
 label = "Visual Options"

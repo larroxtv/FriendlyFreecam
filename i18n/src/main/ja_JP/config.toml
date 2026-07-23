@@ -33,11 +33,6 @@ tooltip = "カメラの動き方。"
 label = "衝突オプション"
 tooltip = "Freecamで移動可能なブロック。"
 
-  [freecam.config.collision.ignoreAll]
-  label = "すべての衝突を無視する"
-  "tooltip[0]" = "Freecamのすべてのブロックを通過できるようにする。"
-  "tooltip[1]" = "§e上記の設定を上書きします。"
-
   [freecam.config.collision.ignoreTransparent]
   label = "透明ブロックを無視する"
   tooltip = "Freecamで透明なブロックを通過できるようにする。"
@@ -59,11 +54,6 @@ label = "IDを無視する"
 label = "正規表現を無視する"
 "tooltip[0]" = "正規表現を使用する"
 "tooltip[1]" = '"minecraft:grass_block" などのフルブロック ID と一致しました。'
-
-  [freecam.config.collision.alwaysCheck]
-  label = "初期衝突を常にチェックする"
-  "tooltip[0]" = "§7すべての衝突を無視§r を使用している場合でも、"
-  "tooltip[1]" = "§7初期視点§r で衝突をチェックするかどうか。"
 
 [freecam.config.visual]
 label = "ビジュアルオプション"
