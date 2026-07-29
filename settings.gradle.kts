@@ -1,8 +1,3 @@
-val isCi = System.getenv("CI") == "true"
-gradle.startParameter.isParallelProjectExecutionEnabled = !isCi
-gradle.startParameter.isBuildCacheEnabled = !isCi
-gradle.startParameter.isConfigureOnDemand = !isCi
-
 dependencyResolutionManagement {
     versionCatalogs {
         create("libs") {
@@ -55,7 +50,7 @@ stonecutter {
     create(rootProject, file("stonecutter.settings.toml"))
 }
 
-include("i18n")
+include("config", "i18n")
 
 includeBuild("changelog")
 

@@ -1,10 +1,12 @@
+import net.fabricmc.loom.configuration.IncludeConfigurations.nestJars
 import net.fabricmc.loom.task.FabricModJsonV1Task
-import org.gradle.kotlin.dsl.sc
+import net.fabricmc.loom.task.RemapJarTask
 
 plugins {
     alias(libs.plugins.fletchingtable.fabric)
     id("freecam.loom-adapter")
     id("freecam.loaders")
+    id("freecam.shadow")
 }
 
 fletchingTable {
@@ -62,9 +64,10 @@ dependencies {
         exclude(module = "fabric-loader")
     }
 
+    bundle(api(project(":config"))!!)
+
     sc.node.sibling("cloth-config")?.let {
-        include(it.project)
-        api(project(path = it.project.path, configuration = "namedElements"))
+        bundle(api(project(path = it.project.path, configuration = "namedElements"))!!)
 
         include(modApi("me.shedaniel.cloth:cloth-config-fabric") {
             version { prefer(meta.deps["cloth"]!!) }
@@ -99,11 +102,17 @@ loom {
     }
 }
 
+val finalJarTask = if (loomAdapter.hasMappings) tasks.named<RemapJarTask>("remapJar") else tasks.shadowJar
+
 tasks.register<Copy>("buildAndCollect") {
     group = "build"
-    from(loomAdapter.modJar.map { it.archiveFile })
+    from(finalJarTask.flatMap { it.archiveFile })
     into(rootProject.layout.buildDirectory.file("libs/${meta.buildDir}"))
     dependsOn(tasks.build)
+}
+
+tasks.generateReleaseMetadata {
+    artifactFileName = finalJarTask.flatMap { it.archiveFileName }
 }
 
 tasks {
@@ -167,7 +176,15 @@ tasks {
         inputs.properties("java_version" to meta.javaVersion)
     }
 
-    generateReleaseMetadata {
-        artifactFileName = loomAdapter.modJar.flatMap { it.archiveFileName }
+    if (loomAdapter.hasMappings) {
+        shadowJar {
+            archiveClassifier = "named"
+        }
+        named<RemapJarTask>("remapJar") {
+            inputFile = shadowJar.flatMap { it.archiveFile }
+            archiveClassifier = null
+        }
+    } else {
+        nestJars(project, shadowJar, configurations.include)
     }
 }
