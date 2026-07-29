@@ -33,6 +33,11 @@ tooltip = "Como a câmera se move."
 label = "Colisões"
 tooltip = "Quais blocos é possível atravessar no freecam."
 
+  [freecam.config.collision.ignoreAll]
+  label = "Ignorar Colisões"
+  "tooltip[0]" = "Permite atravessar todos os blocos no freecam."
+  "tooltip[1]" = "§eSubstitui as opções acima."
+
   [freecam.config.collision.ignoreTransparent]
   label = "Ignorar Blocos Invisíveis"
   tooltip = "Permite atravessar blocos invisíveis no freecam."
@@ -54,6 +59,11 @@ label = "Ignorar IDs"
 label = "Ignorar Expressões Regulares"
 "tooltip[0]" = "Usa a sintaxe de Expressões Regulares."
 "tooltip[1]" = 'Corresponde ao ID inteiro do bloco, p. ex.: "minecraft:grass_block".'
+
+  [freecam.config.collision.alwaysCheck]
+  label = "Sempre Conferir Colisão Inicial"
+  "tooltip[0]" = "Se a §7Perspectiva Inicial§r deve conferir pela"
+  "tooltip[1]" = "colisão, mesmo se usar §7Ignorar Colisões§r."
 
 [freecam.config.visual]
 label = "Visuais"

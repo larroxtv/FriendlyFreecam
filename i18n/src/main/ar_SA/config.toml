@@ -33,6 +33,11 @@ tooltip = "How the camera moves."
 label = "Collision Options"
 tooltip = "Which blocks you can travel through in freecam."
 
+  [freecam.config.collision.ignoreAll]
+  label = "Ignore All Collision"
+  "tooltip[0]" = "Allows travelling through all blocks in freecam."
+  "tooltip[1]" = "§eOverrides above settings."
+
   [freecam.config.collision.ignoreTransparent]
   label = "Ignore Transparent Blocks"
   tooltip = "Allows travelling through transparent blocks in freecam."
@@ -54,6 +59,11 @@ label = "Ignore IDs"
 label = "Ignore Regular Expressions"
 "tooltip[0]" = "Use Regular Expression syntax."
 "tooltip[1]" = 'Matched against full block id, e.g. "minecraft:grass_block".'
+
+  [freecam.config.collision.alwaysCheck]
+  label = "Always Check Initial Collision"
+  "tooltip[0]" = "Whether §7Initial Perspective§r should check for"
+  "tooltip[1]" = "collision, even when using §7Ignore All Collision§r."
 
 [freecam.config.visual]
 label = "Visual Options"

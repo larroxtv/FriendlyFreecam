@@ -33,6 +33,11 @@ tooltip = "Hur kameran rör sig."
 label = "Kollisionsalternativ"
 tooltip = "Vilka block du kan resa igenom i freecam."
 
+  [freecam.config.collision.ignoreAll]
+  label = "Ignorera alla kollisioner"
+  "tooltip[0]" = "Tillåter att resa genom alla block i freecam."
+  "tooltip[1]" = "§eÅsidosätter ovanstående inställningar."
+
   [freecam.config.collision.ignoreTransparent]
   label = "Ignorera genomskinliga block"
   tooltip = "Tillåter att resa genom genomskinliga block i freecam."
@@ -54,6 +59,11 @@ label = "Ignorera ID"
 label = "Ignorera vanliga uttryck"
 "tooltip[0]" = "Använd syntaxen för reguljära uttryck."
 "tooltip[1]" = 'Matchade mot hela block-id, t.ex. "minecraft:grass_block".'
+
+  [freecam.config.collision.alwaysCheck]
+  label = "Kontrollera alltid den initiala kollisionen"
+  "tooltip[0]" = "Huruvida initiala perspektiv§r ska kolla efter"
+  "tooltip[1]" = "kollision, även när du använder §7Ignorera All Collision§r."
 
 [freecam.config.visual]
 label = "Visuella Alternativ"

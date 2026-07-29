@@ -49,6 +49,8 @@ public interface ModConfig {
 
     double getVerticalSpeed();
 
+    boolean ignoreAllCollision();
+
     boolean shouldCheckInitialCollision();
 
     boolean ignoreCollisionWith(Block block);

@@ -33,6 +33,11 @@ tooltip = "Jak porusza się kamera."
 label = "Opcje kolizji"
 tooltip = "Przez które bloki możesz przechodzić w wolnej kamerze."
 
+  [freecam.config.collision.ignoreAll]
+  label = "Ignoruj wszystkie kolizje"
+  "tooltip[0]" = "Umożliwia podróżowanie przez wszystkie bloki w wolnej kamerze."
+  "tooltip[1]" = "§eNadpisuje powyższe ustawienia."
+
   [freecam.config.collision.ignoreTransparent]
   label = "Ignoruj Przezroczyste Bloki"
   tooltip = "Umożliwia podróżowanie przez przezroczyste bloki w wolnej kamerze."
@@ -54,6 +59,11 @@ label = "Ignoruj identyfikatory"
 label = "Ignoruj wyrażenia regularne (RegEx)"
 "tooltip[0]" = "Użyj składni wyrażeń regularnych (RegEx)."
 "tooltip[1]" = 'Porównywane z pełnym identyfikatorem bloku, np. "minecraft:grass_block".'
+
+  [freecam.config.collision.alwaysCheck]
+  label = "Zawsze Sprawdzaj Początkową Kolizję"
+  "tooltip[0]" = "Czy §7perspektywa początkowa§r powinna być sprawdzana"
+  "tooltip[1]" = "kolizja, nawet podczas używania §7Ignoruj wszystkie kolizje§r."
 
 [freecam.config.visual]
 label = "Opcje wizualne"

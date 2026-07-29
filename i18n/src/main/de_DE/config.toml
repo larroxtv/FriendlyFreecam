@@ -33,6 +33,11 @@ tooltip = "Wie sich die Kamera bewegt."
 label = "Kollisionsoptionen"
 tooltip = "Durch welche Blöcke du in Freecam fliegen kannst."
 
+  [freecam.config.collision.ignoreAll]
+  label = "Alle Kollision ignorieren"
+  "tooltip[0]" = "Ermöglicht das Bewegen durch alle Blöcke in Freecam."
+  "tooltip[1]" = "§eÜberschreibt obere Einstellungen."
+
   [freecam.config.collision.ignoreTransparent]
   label = "Transparente Blöcke ignorieren"
   tooltip = "Ermöglicht das Bewegen durch transparente Blöcke in Freecam."
@@ -54,6 +59,11 @@ label = "IDs ignorieren"
 label = "Reguläre Ausdrücke ignorieren"
 "tooltip[0]" = "Verwende reguläre Ausdruckssyntax."
 "tooltip[1]" = 'Auf volle Block-id gegengeprüft, z.B. "minecraft:grass_block".'
+
+  [freecam.config.collision.alwaysCheck]
+  label = "Erste Kollision immer überprüfen"
+  "tooltip[0]" = "Ob §7Erste Perspektive$r auf Kollisionen prüfen soll,"
+  "tooltip[1]" = "Auch bei Verwendung von $7Alle Kollisionen Ignorieren§r."
 
 [freecam.config.visual]
 label = "Visuelle Optionen"

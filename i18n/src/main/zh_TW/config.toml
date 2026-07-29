@@ -33,6 +33,11 @@ tooltip = "攝影機的移動方式。"
 label = "碰撞選項"
 tooltip = "你可以在 Freecam 中穿過的方塊。"
 
+  [freecam.config.collision.ignoreAll]
+  label = "忽略所有碰撞"
+  "tooltip[0]" = "允許在 Freecam 中穿過所有方塊。"
+  "tooltip[1]" = "§e覆蓋以上設定。"
+
   [freecam.config.collision.ignoreTransparent]
   label = "無視透明方塊"
   tooltip = "允許在 Freecam 中穿過透明方塊。"
@@ -54,6 +59,11 @@ label = "忽略 ID"
 label = "忽略規則運算式"
 "tooltip[0]" = "使用規則運算式語法。"
 "tooltip[1]" = '以完整方塊 ID 比對，例如 "minecraft:grass_block"。'
+
+  [freecam.config.collision.alwaysCheck]
+  label = "一律檢查初始碰撞"
+  "tooltip[0]" = "即使使用 §7忽略所有碰撞§r，"
+  "tooltip[1]" = "§7初始視角§r 是否也應檢查碰撞。"
 
 [freecam.config.visual]
 label = "視覺選項"
